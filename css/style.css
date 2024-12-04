@@ -34,14 +34,25 @@ section {
 }
 
 h1, h2 {
-    font-size: 40px;
     text-align: center;
 }
 
-#headshot {
-  text-align: center;
+nav ul li a.active {
+  color: #f39c12; /* Highlight color for the active page */
+  font-weight: bold;
 }
 
-#Name {
-  font-size: 60px;
+.about-container {
+  display: flex;
+  align-items: center; /* Vertically center-align photo and paragraph */
+  gap: 20px; /* Add space between photo and text */
+}
+
+.about-photo {
+  width: 150px; /* Adjust size of the image */
+  height: auto;
+}
+
+.about-text {
+  flex: 1; /* Allow the text to take the remaining space */
 }
