@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dylan Dodds Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!--Font Awsome used for linkedin and contact icons-->
+  </head>
+  <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <h1 id="Name">Dylan Dodds</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
+    <section id="headshot">
+      <img src="images/headshot.jpg" alt="Dylan Dodds Headshot" style="width:150px; height:auto;">
+    </section>
     <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I’m Dylan Dodds, a Computer Science student passionate about technology and innovation.</p>
+      <h2>About Me</h2>
+      <p>Hello! I’m Dylan Dodds, a Computer Science student at NYU with interests in AI/ML, quant, and cybersecurity.</p>
     </section>
     <section id="projects">
-        <h2>My Projects</h2>
-        <p>Details about my work will go here.</p>
+      <h2>My Projects</h2>
+
+      <div class="project">
+        <h3>Personal Portfolio Website</h3>
+        <p>This is the website you're currently viewing! It showcases my skills in HTML, CSS, and JavaScript, and serves as a platform for future projects.</p>
+        <a href="https://github.com/doddshk/portfolio" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>Expense Tracker Application</h3>
+        <p>A simple web application built with Python and SQLite that allows users to track and manage their expenses.</p>
+        <a href="https://github.com/your-username/expense-tracker" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>Movie Recommender</h3>
+        <p>When I watch a movie with my film buff friends, they always have the problem of taking too long to decide what movie to watch, often times spending longer thinking about what to watch than watching. My movie recommender solves this issue. Powered by a ML model, it takes movies and their ratings from the user and outputs a movie recommendation.  </p>
+        <a href="https://github.com/your-username/personal-blog" target="_blank">View on GitHub</a>
+      </div>
     </section>
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: dyd2008@nyu.edu</p>
+      <h2>Contact</h2>
+      <p>Email: dyd2008@nyu.edu</p>
+      <a href="https://www.linkedin.com/in/dylandodds" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
     </section>
-</body>
+  </body>
 </html>
 
