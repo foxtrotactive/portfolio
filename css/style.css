@@ -57,3 +57,13 @@ nav ul li a.active {
   flex: 1; /* Allow the text to take the remaining space */
 }
 
+.project-header {
+    display: flex;
+    justify-content: space-between;  /* Aligns the content on opposite sides */
+    align-items: center;             /* Vertically aligns the content */
+}
+
+.date {
+    font-size: 0.9em;
+    color: gray;
+}
