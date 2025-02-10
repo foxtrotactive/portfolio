@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dwm-portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="status-bar">
+        <div class="bar-left">
+            <span class="tag active" data-target="home">1:Home</span>
+            <span class="tag" data-target="projects">2:Projects</span>
+            <span class="tag" data-target="about">3:About</span>
+            <span class="tag" data-target="contact">4:Contact</span>
+        </div>
+        <div class="bar-center" id="window-title">~/portfolio</div>
+        <div class="bar-right">
+            <span id="clock"></span>
+            <span>dwm [X]</span>
+        </div>
+    </div>
+
+    <main class="content">
+        <section id="home" class="window active">
+            <h1>Dylan Dodds</h1>
+            <div class="window-content">
+                <div class="terminal">
+                    <div class="terminal-bar">
+                        <span>xterm</span>
+                        <span>∼</span>
+                    </div>
+                    <pre class="terminal-content">
+$ eog headshot.jpg
+<img class = "headshot" src = "data/headshot.jpg" alt = "My Photo">
+
+$ whoami
+Full-stack developer
+
+$ cat skills.txt
+C++/C | Python | JavaScript | HTML/CSS
+SQL | Git | Docker | AWS | Pytorch
+
+$ cat hotkeys.txt
+[1] to return
+[2] to Projects
+[3] to About
+[4] to Contact
+                  </pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="window">
+            <h2>Projects</h2>
+            <div class="window-content">
+                <div class="tile">
+                    <h3>Home Server</h3>
+                    <p>Deployed a home server using Ubuntu.  </p>
+                    <a href="github.com">github.com/homeserver/</a>
+                </div>
+                <div class="tile">
+                  <h3>Portfolio</h3>
+                    <p>Portfolio in vanilla HTML, CSS, and JS</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="window">
+            <h2>About</h2>
+            <div class="window-content">
+                <p>[ Software Developer ]</p>
+                <p>> Intrested in AI, quantum computing, and blockchain.  
+                <p>> Open source lover and contributor</p>
+                <p>> Fan of linux and suckless software</p></br>
+                <a href="resume.pdf">[ My Resume ]</link>
+            </div>
+        </section>
+
+        <section id="contact" class="window">
+            <h2>Contact</h2>
+            <div class="window-content">
+                <div class="tile">
+                    <h3>Email</h3>
+                    <p>dylan@dodds.org</p>
+                </div>
+                <div class="tile">
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/foxtrotactive"> github.com/foxtrotactive </a>
+                </div>
+                <div class="tile">
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/dylandodds"> linkedin.com/in/dylandodds</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
