@@ -106,3 +106,15 @@ a {
     margin: 10px 0;
     border: 1px solid #404040;
 }
+
+.tile h3 {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing between the title and text */
+}
+
+.tile .sub-text {
+    font-size: 0.9em; /* Slightly smaller text size for the sub-text */
+    color: #666; /* Optional: lighter color for distinction */
+    display: inline-block;
+}
+
