@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Open post in new tab
                 entry.addEventListener('click', () => {
-                    window.open(`/blog-post.html?post=${encodeURIComponent(post.file)}`, '_blank');
+                    window.open(`blog-post.html?post=${encodeURIComponent(post.file)}`, '_blank');
                 });
 
                 blogList.appendChild(entry);
