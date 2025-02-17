@@ -118,3 +118,121 @@ a {
     display: inline-block;
 }
 
+/* BLOG *//*
+.post {
+    background: #2a2a2a;
+    border: 1px solid #404040;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.post h3 {
+    color: #88c0d0;
+    margin-bottom: 10px;
+}
+
+.date {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    line-height: 1.6;
+}
+
+.post-content h1, .post-content h2, .post-content h3 {
+    color: #88c0d0;
+    margin: 15px 0;
+}
+
+.post-content code {
+    background: #1a1a1a;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.post-content pre {
+    background: #1a1a1a;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.post-content a {
+    color: #8fbcbb;
+    text-decoration: underline;
+}
+*/
+/* blog styling */
+.blog-entry {
+    /* Basic clickable styling */
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    left: 0;
+
+    /* Visual hierarchy */
+    border-left: 3px solid transparent;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+/* Hover effect */
+.blog-entry:hover {
+    background: #333333;
+    border-left-color: #88c0d0;
+    transform: translateX(5px);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Active/pressed effect */
+.blog-entry:active {
+    transform: translateX(5px) scale(0.98);
+}
+
+/* Focus state for keyboard navigation */
+.blog-entry:focus {
+    outline: 2px solid #88c0d0;
+    outline-offset: 2px;
+}
+
+/* Title styling */
+.blog-entry h3 {
+    color: #88c0d0;
+    margin-bottom: 8px;
+    transition: color 0.2s;
+}
+
+.blog-entry:hover h3 {
+    color: #81a1c1;
+}
+
+/* Date styling */
+.blog-meta {
+    color: #666;
+    font-size: 0.9em;
+    transition: color 0.2s;
+}
+
+.blog-entry:hover .blog-meta {
+    color: #888;
+}
+
+/* Optional: Add a ">" indicator */
+.blog-entry::after {
+    content: "→";
+    color: #88c0d0;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.blog-entry:hover::after {
+    opacity: 1;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Post</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+</head>
+<body>
+    <main class="content">
+        <article id="blog-post" class="window active">
+            <div class="window-content">
+                <div class="post-content"></div>
+            </div>
+        </article>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const params = new URLSearchParams(window.location.search);
+            const postFile = params.get('post');
+            const converter = new showdown.Converter();
+            
+            try {
+                const response = await fetch(`blog-posts/${postFile}`);
+                const markdown = await response.text();
+                const html = converter.makeHtml(markdown);
+                document.querySelector('.post-content').innerHTML = html;
+            } catch (error) {
+                document.querySelector('.post-content').innerHTML = `
+                    <p class="error">Error loading post: ${error.message}</p>
+                `;
+            }
+        });
+    </script>
+</body>
+</html>

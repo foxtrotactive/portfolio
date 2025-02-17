@@ -6,6 +6,7 @@
     <title>Dylan Dodds</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="data/icon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
 </head>
 <body>
     <div class="status-bar">
@@ -14,6 +15,7 @@
             <span class="tag" data-target="projects">2:Projects</span>
             <span class="tag" data-target="about">3:About</span>
             <span class="tag" data-target="contact">4:Contact</span>
+            <span class="tag" data-target="blog">5:Blog</span> <!-- New blog tab -->
         </div>
         <div class="bar-center" id="window-title">~/portfolio</div>
         <div class="bar-right">
@@ -24,7 +26,7 @@
 
     <main class="content">
         <section id="home" class="window active">
-            <h1>Dylan Dodos</h1>
+            <h1>Dylan Dodds</h1>
             <div class="window-content">
                 <div class="terminal">
                     <div class="terminal-bar">
@@ -52,7 +54,7 @@ $ cat skills.txt
             <h2>Projects</h2>
             <div class="window-content">
                 <div class="tile">
-                  <h3>Dylan's Blockchain <span class="sub-text"> [05/2025 - present]</span></h3>
+                  <h3>Blockchain <span class="sub-text"> [05/2025 - present]</span></h3>
                     <p>> Building my own blockchain from scratch.</p>
                     <p>> Technologies: Python</p>
                     <!--
@@ -105,6 +107,16 @@ $ cat skills.txt
                 </div>
             </div>
         </section>
+
+      <section id="blog" class="window">
+          <h2>Blog</h2>
+          <div class="window-content">
+              <div class="blog-list">
+
+              </div>
+          </div>
+      </section>
+
     </main>
 
     <script src="script.js"></script>
