@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // Fetch and validate posts
-            const response = await fetch('/blog-posts/posts.json');
+            const response = await fetch('blog-posts/posts.json');
             if (!response.ok) throw new Error('Failed to load posts.json');
             
             const posts = await response.json();
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const validatedPosts = await Promise.all(
                 posts.map(async post => {
                     try {
-                        const res = await fetch(`/blog-posts/${post.file}`);
+                        const res = await fetch(`blog-posts/${post.file}`);
                         return res.ok ? post : null;
                     } catch (error) {
                         console.warn(`Post file missing: ${post.file}`);
