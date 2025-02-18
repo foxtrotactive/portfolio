@@ -2,5 +2,4 @@
 
 I made this blog today :) 
 
-More to come >:)
 
